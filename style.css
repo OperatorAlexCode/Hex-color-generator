@@ -1,0 +1,93 @@
+:root {
+    --Color: #C2B280;
+    --Margin: 30px;
+    --Height: calc(100vh - (var(--Margin) + var(--Border-width))*2);
+    --Background: white;
+    --Border-width: 4px;
+}
+
+html {
+    background-color: var(--Background);
+}
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    height: var(--Height);
+    background-color: var(--Color);
+    justify-content: center;
+    align-items: center;
+    margin: var(--Margin);
+    border: var(--Border-width) solid black;
+    border-radius: 30px;
+}
+
+button {
+    border: 3px solid black;
+    border-radius: 6px;
+    font-size: medium;
+    appearance: none;
+    text-align: center;
+}
+
+.UI {
+    background-color: var(--Background);
+    padding: 16px;
+    align-items: center;
+    border: var(--Border-width) solid black;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+}
+
+#Randomize {
+    width: 100px;
+    height: 40px;
+}
+
+#Display {
+    margin-top: 0;
+    color: var(--Color);
+}
+
+.spacer {
+    height: 16px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .UI {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .UI {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .UI {
+        width: 64vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --Margin: 10px;
+    }
+
+    .UI {
+        width: 64vw;
+    }
+}

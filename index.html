@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hex Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+</head>
+<body class="column">
+    <div class="UI column">
+        <!-- <h2 style="margin-top: 2px; margin-bottom: 10px;">Current Color</h2> -->
+        <h1 class="text" id="Display">ERROR!</h1>
+        <button id="Randomize">Generate</button>
+        <div class="spacer"></div>
+        <input autocomplete="off" maxlength="6" id="Seed" placeholder="Seed" pattern="[A-Za-z]">
+        <div style="height: 10px;"></div>
+        <p class="text" style="margin: 0;">To Note:</p>
+        <p style="margin-top: 0; margin-bottom: 0; width: 100%;">*X is used to determin how many characters in the seed shall be put in the generated color<br></p>
+        <!-- <div style="height: 10px;"></div>
+        <h3 style="margin: 0;">Error code:</h3>
+        <h3 style="margin: 0; font-weight: normal;" id="Error-code">ERROR!</h3> -->
+    </div>
+    
+    <script src="code.js"></script>
+</body>
+</html>
